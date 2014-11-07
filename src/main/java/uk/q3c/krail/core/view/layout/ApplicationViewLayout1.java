@@ -10,13 +10,13 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.q3c.krail.base.view.layout;
+package uk.q3c.krail.core.view.layout;
 
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.HorizontalSplitPanel;
 import com.vaadin.ui.VerticalLayout;
-import uk.q3c.krail.base.view.layout.DefaultViewConfig.Split;
+import uk.q3c.krail.core.view.layout.DefaultViewConfig.Split;
 
 public class ApplicationViewLayout1 extends ViewLayoutBase {
     private VerticalLayout baseLayout;

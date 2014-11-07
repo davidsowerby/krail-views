@@ -10,12 +10,12 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.q3c.krail.base.view;
+package uk.q3c.krail.core.view;
 
 import com.google.inject.Inject;
-import uk.q3c.krail.base.view.component.*;
-import uk.q3c.krail.base.view.layout.ApplicationViewLayout1;
-import uk.q3c.krail.base.view.layout.ViewBaseWithLayout;
+import uk.q3c.krail.core.view.component.*;
+import uk.q3c.krail.core.view.layout.ApplicationViewLayout1;
+import uk.q3c.krail.core.view.layout.ViewBaseWithLayout;
 import uk.q3c.krail.i18n.Translate;
 
 /**

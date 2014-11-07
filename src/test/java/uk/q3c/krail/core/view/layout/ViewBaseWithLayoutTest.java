@@ -10,7 +10,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.q3c.krail.base.view.layout;
+package uk.q3c.krail.core.view.layout;
 
 import com.google.inject.Provider;
 import com.mycila.testing.junit.MycilaJunitRunner;
@@ -25,9 +25,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import uk.q3c.krail.base.navigate.Navigator;
-import uk.q3c.krail.base.view.KrailViewChangeEvent;
-import uk.q3c.krail.base.view.layout.ViewBaseWithLayout.ComponentWrapper;
+import uk.q3c.krail.core.navigate.Navigator;
+import uk.q3c.krail.core.view.KrailViewChangeEvent;
+import uk.q3c.krail.core.view.layout.ViewBaseWithLayout.ComponentWrapper;
 import uk.q3c.krail.i18n.LabelKey;
 import uk.q3c.krail.i18n.Translate;
 

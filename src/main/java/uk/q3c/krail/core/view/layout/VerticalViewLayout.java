@@ -10,10 +10,10 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.q3c.krail.base.view.layout;
+package uk.q3c.krail.core.view.layout;
 
 import com.vaadin.ui.*;
-import uk.q3c.krail.base.view.layout.DefaultViewConfig.Split;
+import uk.q3c.krail.core.view.layout.DefaultViewConfig.Split;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -163,7 +163,7 @@ public class VerticalViewLayout extends ViewLayoutBase {
     /**
      * For this layout, a split can only be between consecutively numbered components
      *
-     * @see uk.q3c.krail.base.view.layout.ViewLayout#isValidSplit(uk.q3c.krail.base.view.layout.DefaultViewConfig.Split)
+     * @see uk.q3c.krail.core.view.layout.ViewLayout#isValidSplit(uk.q3c.krail.core.view.layout.DefaultViewConfig.Split)
      */
     @Override
     public boolean isValidSplit(Split split) {
