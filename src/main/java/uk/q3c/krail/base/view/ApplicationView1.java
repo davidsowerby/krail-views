@@ -10,13 +10,13 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.co.q3c.v7.base.view;
+package uk.q3c.krail.base.view;
 
 import com.google.inject.Inject;
-import uk.co.q3c.v7.base.view.component.*;
-import uk.co.q3c.v7.base.view.layout.ApplicationViewLayout1;
-import uk.co.q3c.v7.base.view.layout.ViewBaseWithLayout;
-import uk.co.q3c.v7.i18n.Translate;
+import uk.q3c.krail.base.view.component.*;
+import uk.q3c.krail.base.view.layout.ApplicationViewLayout1;
+import uk.q3c.krail.base.view.layout.ViewBaseWithLayout;
+import uk.q3c.krail.i18n.Translate;
 
 /**
  * This view provides the base for a fairly typical layout for an application. It is not expected that it will be used

@@ -10,29 +10,29 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.co.q3c.v7.base.view.layout;
+package uk.q3c.krail.base.view.layout;
 
 public class ViewLayoutConfigurationException extends RuntimeException {
 
-	public ViewLayoutConfigurationException() {
-		super();
-	}
+    public ViewLayoutConfigurationException() {
+        super();
+    }
 
-	public ViewLayoutConfigurationException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
-	}
+    public ViewLayoutConfigurationException(String message, Throwable cause, boolean enableSuppression,
+                                            boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 
-	public ViewLayoutConfigurationException(String message, Throwable cause) {
-		super(message, cause);
-	}
+    public ViewLayoutConfigurationException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
-	public ViewLayoutConfigurationException(String message) {
-		super(message);
-	}
+    public ViewLayoutConfigurationException(String message) {
+        super(message);
+    }
 
-	public ViewLayoutConfigurationException(Throwable cause) {
-		super(cause);
-	}
+    public ViewLayoutConfigurationException(Throwable cause) {
+        super(cause);
+    }
 
 }

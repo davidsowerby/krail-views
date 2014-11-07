@@ -10,7 +10,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.co.q3c.v7.base.view.layout;
+package uk.q3c.krail.base.view.layout;
 
 import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.AbstractOrderedLayout;
@@ -20,25 +20,27 @@ import com.vaadin.ui.HorizontalSplitPanel;
 
 public class HorizontalViewLayout extends VerticalViewLayout {
 
-	protected HorizontalViewLayout() {
-		super();
-	}
+    protected HorizontalViewLayout() {
+        super();
+    }
 
-	@Override
-	protected AbstractSplitPanel newVaadinSplitPanel() {
-		return new HorizontalSplitPanel();
-	}
+    @Override
+    protected AbstractSplitPanel newVaadinSplitPanel() {
+        return new HorizontalSplitPanel();
+    }
 
-	@Override
-	protected AbstractOrderedLayout newVaadinLayout() {
-		return new HorizontalLayout();
-	}
+    @Override
+    protected AbstractOrderedLayout newVaadinLayout() {
+        return new HorizontalLayout();
+    }
 
-	@Override
-	public ViewConfig defaultConfig() {
-		ViewConfig config = new DefaultViewConfig();
-		config.heightUnit(Unit.PERCENTAGE).height(100).noWidth();
-		return config;
-	}
+    @Override
+    public ViewConfig defaultConfig() {
+        ViewConfig config = new DefaultViewConfig();
+        config.heightUnit(Unit.PERCENTAGE)
+              .height(100)
+              .noWidth();
+        return config;
+    }
 
 }

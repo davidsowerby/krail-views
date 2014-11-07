@@ -10,27 +10,27 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.co.q3c.v7.base.view.layout;
+package uk.q3c.krail.base.view.layout;
 
 import com.google.inject.Inject;
 import com.vaadin.server.Sizeable;
 import com.vaadin.server.Sizeable.Unit;
 import com.vaadin.ui.AbstractComponent;
 import com.vaadin.ui.Component;
-import uk.co.q3c.v7.base.view.ViewBase;
-import uk.co.q3c.v7.i18n.I18NKey;
-import uk.co.q3c.v7.i18n.Translate;
+import uk.q3c.krail.base.view.ViewBase;
+import uk.q3c.krail.i18n.I18NKey;
+import uk.q3c.krail.i18n.Translate;
 
 import java.util.List;
 
 /**
  * Uses a {@link ViewLayout} instance to provide component layout, a {@link ViewConfig} instance to provide
  * configuration and component default settings.
- * <p>
+ * <p/>
  * Provides a number of methods to build a chain (using the internal class {@link ComponentWrapper}), for example:
- * <p>
+ * <p/>
  * add(Button).width(50).height("20%").caption("neat");
- * <p>
+ * <p/>
  * To change config: getConfig(), make changes, and then call assemble() to implement changes
  */
 public abstract class ViewBaseWithLayout extends ViewBase implements ViewWithLayout {
@@ -38,7 +38,7 @@ public abstract class ViewBaseWithLayout extends ViewBase implements ViewWithLay
     private ViewConfig config;
     private ViewLayout layout;
 
-	@Inject
+    @Inject
     protected ViewBaseWithLayout(ViewLayout viewLayout, Translate translate) {
         super();
         this.translate = translate;
@@ -81,11 +81,11 @@ public abstract class ViewBaseWithLayout extends ViewBase implements ViewWithLay
         return component;
     }
 
-	public ViewLayout getLayout() {
-		return layout;
-	}
+    public ViewLayout getLayout() {
+        return layout;
+    }
 
-	public void setLayout(ViewLayout layout) {
+    public void setLayout(ViewLayout layout) {
         this.layout = layout;
     }
 
@@ -97,16 +97,16 @@ public abstract class ViewBaseWithLayout extends ViewBase implements ViewWithLay
         Component component = addComponent(clazz);
         ComponentWrapper wrapper = new ComponentWrapper(component);
         return wrapper;
-	}
+    }
 
-	public Component addComponent(Class<? extends Component> clazz) {
-		try {
-			Component c = clazz.newInstance();
-			layout.addComponent(c);
-			return c;
-		} catch (Exception e) {
-			String className = (clazz == null) ? "null" : clazz.getName();
-			throw new ViewLayoutConfigurationException("failed to instantiate component from class " + className, e);
+    public Component addComponent(Class<? extends Component> clazz) {
+        try {
+            Component c = clazz.newInstance();
+            layout.addComponent(c);
+            return c;
+        } catch (Exception e) {
+            String className = (clazz == null) ? "null" : clazz.getName();
+            throw new ViewLayoutConfigurationException("failed to instantiate component from class " + className, e);
         }
     }
 
@@ -297,8 +297,8 @@ public abstract class ViewBaseWithLayout extends ViewBase implements ViewWithLay
         public ComponentWrapper disabled() {
             component.setEnabled(false);
             return this;
-		}
+        }
 
-	}
+    }
 
 }

@@ -10,7 +10,7 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-package uk.co.q3c.v7.base.view.layout;
+package uk.q3c.krail.base.view.layout;
 
 import com.google.inject.Provider;
 import com.mycila.testing.junit.MycilaJunitRunner;
@@ -25,18 +25,18 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import uk.co.q3c.v7.base.navigate.V7Navigator;
-import uk.co.q3c.v7.base.view.V7ViewChangeEvent;
-import uk.co.q3c.v7.base.view.layout.ViewBaseWithLayout.ComponentWrapper;
-import uk.co.q3c.v7.i18n.LabelKey;
-import uk.co.q3c.v7.i18n.Translate;
+import uk.q3c.krail.base.navigate.V7Navigator;
+import uk.q3c.krail.base.view.V7ViewChangeEvent;
+import uk.q3c.krail.base.view.layout.ViewBaseWithLayout.ComponentWrapper;
+import uk.q3c.krail.i18n.LabelKey;
+import uk.q3c.krail.i18n.Translate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 @RunWith(MycilaJunitRunner.class)
 @GuiceContext({})
-@Ignore(" https://github.com/davidsowerby/v7/issues/185")
+@Ignore(" https://github.com/davidsowerby/krail/issues/185")
 public class ViewBaseWithLayoutTest {
 
     @Mock
